@@ -44,7 +44,7 @@ p {
         border-radius: 10px 10px 0 0 !important;
     }
     .right-page {
-        padding: 0 !important;
+        padding: 10px 5px !important;
     }
 }
 /* End Media Quries */
