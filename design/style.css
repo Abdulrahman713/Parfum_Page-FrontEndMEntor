@@ -1,0 +1,118 @@
+/* Start Global Values */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+    background-color: hsl(30, 38%, 92%);
+}
+p {
+    font-size: 14px;
+}
+.parent {
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+}
+/* End Global Values */
+/* Start Media Quries */
+
+/* Mobil Screens */
+@media (max-width: 375px) {
+    .parent {
+        display: grid;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 90%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .left-page {
+        background-image: url(images/image-product-mobile.jpg);
+        height: 300px;
+        width: 300px !important;
+        background-size: contain;
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 4 !important;
+        border-radius: 10px 10px 0 0 !important;
+    }
+    .right-page {
+        padding: 10px 5px !important;
+    }
+}
+/* End Media Quries */
+/* Start Card */
+.parent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* End Card */
+/* Start Image of Left-Page */
+.left-page {
+    width: 50%;
+    height: 100%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+/* End Image of Left-Page */
+/* Start Right-Page */
+.right-page {
+    width: 220px;
+    height: 100%;
+    padding: 20px 40px;
+}
+.Title {
+   letter-spacing: 8px;
+   font-size: 14px;
+   text-transform: uppercase;
+}
+.Title2 {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Fraunces', serif;
+    margin: 20px 0;
+}
+.small-paregrah {
+    width: 250px;
+    margin: 20px 0;
+}
+.price {
+    display: flex;
+    align-items: center;
+    color: hsl(158, 36%, 37%);
+}
+.price .new-price {
+    font-family:  'Fraunces', sans-serif;
+    font-size: 25px;
+}
+.price .last-price {
+    margin-left: 25px;
+    font-size: 14px;
+
+}
+button {
+    width: 220px;
+    padding: 15px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s background-color;
+}
+button:active {
+    background-color: hsl(212, 21%, 14%);
+}
+/* Start Right-Page */
